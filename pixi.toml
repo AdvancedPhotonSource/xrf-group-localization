@@ -1,0 +1,18 @@
+[workspace]
+channels = ["conda-forge"]
+name = "xrf-group-localization"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+test = "python -m pytest -q"
+
+[dependencies]
+python = "3.10.*"
+numpy = ">=2.2,<3"
+h5py = ">=3.15,<4"
+pillow = ">=10,<12"
+pytest = ">=8,<9"
+
+[pypi-dependencies]
+opencv-python-headless = ">=4.12,<5"
